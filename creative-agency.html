@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative Editing Agency - Premium, responsive editing services for video, photo, and more.">
+  <title>Creative Editing Agency</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- AOS.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container navbar">
+      <div class="logo" data-aos="fade-right">
+        <i class="fa-solid fa-pen-nib"></i> Agency
+      </div>
+      <div class="nav-links" data-aos="fade-left">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#clients-reviews">Testimonials</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" onclick="toggleNavMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="floating-emojis"></div>
+    <div class="hero-emoji-row" aria-hidden="true" style="display:flex;justify-content:center;gap:1.5rem;margin-bottom:1.5rem;font-size:2.2rem;">
+      <span>🎬</span>
+      <span>🖼️</span>
+      <span>🎨</span>
+      <span>🎥</span>
+      <span>🖌️</span>
+      <span>📸</span>
+      <span>🧑‍💻</span>
+    </div>
+    <h1 data-aos="fade-up">Welcome to <span style="color:#ffd700;">___ Agency</span></h1>
+    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+      <button class="btn" onclick="scrollToSection('work')">Explore Work</button>
+    </div>
+  </section>
+
+  <!-- Scrolling Testimonials Section (Premium) -->
+  <section class="testimonials-premium-section" id="clients-reviews" data-aos="fade-up">
+    <div class="testimonials-premium-title">What Our Clients Say</div>
+    <div class="testimonials-premium-scroll">
+      <div class="testimonials-premium-scroll-inner">
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from John D." data-aos="fade-up">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">John D.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Amazing editing quality and fast delivery!</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Sarah M." data-aos="fade-up" data-aos-delay="100">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Sarah M.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Our reels went viral thanks to their team!</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Alex P." data-aos="fade-up" data-aos-delay="200">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex P. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Alex P.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Top-notch thumbnail design that boosted our clicks.</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Priya S." data-aos="fade-up" data-aos-delay="300">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya S. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Priya S.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Professional, creative, and always on time.</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Michael B." data-aos="fade-up" data-aos-delay="400">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael B. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Michael B.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">The best editing agency we've worked with!</div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from John D." data-aos="fade-up">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">John D.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Amazing editing quality and fast delivery!</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Sarah M." data-aos="fade-up" data-aos-delay="100">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Sarah M.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Our reels went viral thanks to their team!</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Alex P." data-aos="fade-up" data-aos-delay="200">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex P. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Alex P.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Top-notch thumbnail design that boosted our clicks.</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Priya S." data-aos="fade-up" data-aos-delay="300">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya S. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Priya S.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Professional, creative, and always on time.</div>
+        </div>
+        <div class="testimonial-card" tabindex="0" aria-label="Testimonial from Michael B." data-aos="fade-up" data-aos-delay="400">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael B. avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Michael B.</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">The best editing agency we've worked with!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work Section (Premium Dark, 6 Cards) -->
+  <section class="our-work-premium-section" id="work">
+    <div class="our-work-premium-container">
+      <h2 class="our-work-premium-title" data-aos="fade-up">Our Work</h2>
+      <div class="our-work-premium-grid six-cards">
+        <!-- 1. Thumbnail Designing (Image Slideshow) -->
+        <div class="our-work-premium-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="our-work-premium-media slideshow">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Thumbnail Design 1" class="slide active"/>
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Thumbnail Design 2" class="slide"/>
+            <span class="our-work-premium-playicon" aria-hidden="true"><i class="fa fa-image"></i></span>
+          </div>
+          <div class="our-work-premium-label">Thumbnail Designing</div>
+          <div class="our-work-premium-badge photoshop">Adobe Photoshop</div>
+        </div>
+        <!-- 2. Photo Retouching (Before/After Slideshow) -->
+        <div class="our-work-premium-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="our-work-premium-media slideshow">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Photo Retouch Before" class="slide active"/>
+            <img src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=600&q=80" alt="Photo Retouch After" class="slide"/>
+            <span class="our-work-premium-playicon" aria-hidden="true"><i class="fa fa-magic"></i></span>
+          </div>
+          <div class="our-work-premium-label">Photo Retouching</div>
+          <div class="our-work-premium-badge photoshop">Photoshop / Lightroom</div>
+        </div>
+        <!-- 3. Video Editing (Real Video) -->
+        <div class="our-work-premium-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="our-work-premium-media">
+            <video src="https://videos.pexels.com/video-files/856193/856193-hd_1280_720_25fps.mp4" autoplay muted loop playsinline title="Video Editing Showcase" aria-label="Video Editing Showcase"></video>
+            <span class="our-work-premium-playicon" aria-hidden="true"><i class="fa fa-play"></i></span>
+          </div>
+          <div class="our-work-premium-label">Video Editing</div>
+          <div class="our-work-premium-badge premiere">Premiere Pro</div>
+        </div>
+        <!-- 4. Motion Graphics (Real Video) -->
+        <div class="our-work-premium-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="our-work-premium-media">
+            <video src="https://assets.mixkit.co/videos/preview/mixkit-typography-animation-with-words-3178-large.mp4" autoplay muted loop playsinline title="Motion Graphics Reel" aria-label="Motion Graphics Reel"></video>
+            <span class="our-work-premium-playicon" aria-hidden="true"><i class="fa fa-font"></i></span>
+          </div>
+          <div class="our-work-premium-label">Motion Graphics</div>
+          <div class="our-work-premium-badge aftereffects">After Effects</div>
+        </div>
+        <!-- 5. Color Grading Showcase (Before/After Video) -->
+        <div class="our-work-premium-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="our-work-premium-media">
+            <video src="https://assets.mixkit.co/videos/preview/mixkit-color-correction-in-a-forest-3455-large.mp4" autoplay muted loop playsinline title="Color Grading Showcase" aria-label="Color Grading Showcase"></video>
+            <span class="our-work-premium-playicon" aria-hidden="true"><i class="fa fa-adjust"></i></span>
+          </div>
+          <div class="our-work-premium-label">Color Grading Showcase</div>
+          <div class="our-work-premium-badge davinci">DaVinci Resolve</div>
+        </div>
+        <!-- 6. Social Media Ad (Vertical Video) -->
+        <div class="our-work-premium-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="our-work-premium-media">
+            <video src="https://assets.mixkit.co/videos/preview/mixkit-instagram-story-with-animated-text-3179-large.mp4" autoplay muted loop playsinline title="Social Media Ad" aria-label="Social Media Ad" style="aspect-ratio:9/16;object-fit:cover;"></video>
+            <span class="our-work-premium-playicon" aria-hidden="true"><i class="fa fa-mobile-alt"></i></span>
+          </div>
+          <div class="our-work-premium-label">Social Media Ad</div>
+          <div class="our-work-premium-badge premiere">After Effects / Premiere Pro</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section (Premium) -->
+  <section class="about-me-premium-section" id="about-me">
+    <div class="about-me-premium-container">
+      <div class="about-me-premium-image" data-aos="fade-right">
+        <img src="DSC09013.JPG" alt="Your Portrait" />
+      </div>
+      <div class="about-me-premium-content" data-aos="fade-left">
+        <h2 class="about-me-premium-title">K.Venkata Navadheer</h2>
+        <div class="about-me-premium-role">CEO &amp; Founder</div>
+        <p class="about-me-premium-bio">
+          Hi, I'm <b>K.Venkata Navadheer</b>, CEO &amp; Founder of <b>Your Brand</b>. I specialize in creative editing and design solutions that inspire, inform, and visually engage. My passion is turning ideas into stunning visuals that make an impact.
+        </p>
+        <div class="about-me-premium-tools">
+          <span class="about-me-tool-badge">Adobe Photoshop</span>
+          <span class="about-me-tool-badge">Premiere Pro</span>
+          <span class="about-me-tool-badge">After Effects</span>
+          <span class="about-me-tool-badge">DaVinci Resolve</span>
+          <span class="about-me-tool-badge">Thumbnail Designing</span>
+          <span class="about-me-tool-badge">Color Grading</span>
+          <span class="about-me-tool-badge">Motion Graphics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section
+  <section class="section" id="about">
+    <div class="about-section" data-aos="fade-up">
+      <img src="https://via.placeholder.com/110x110?text=Profile" alt="Profile" class="about-pic">
+      <div class="about-bio">
+        <p>Hi! I'm <b>Editor Name</b>, a passionate creative editor with years of experience in video, photo, and content editing. I help brands and creators bring their vision to life with a modern, premium touch.</p>
+      </div>
+      <button class="about-btn" onclick="window.open('#', '_blank')">More Details</button>
+    </div>
+  </section>
+
+  <!-- Testimonials Placeholder -->
+  <!-- <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Testimonials</h2>
+      <div style="text-align:center; color:#888; font-size:1.1rem;" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-quote-left"></i> <span>"Client testimonials coming soon..."</span> <i class="fa-solid fa-quote-right"></i>
+      </div>
+    </div>
+  </section> --> -->
+
+  <!-- Premium Footer / Contact Closing Section -->
+  <footer class="footer-premium-section" data-aos="fade-up">
+    <div class="footer-premium-container">
+      <div class="footer-brand">
+        <i class="fa-solid fa-pen-nib"></i> Agency
+      </div>
+      <div class="footer-contact-list">
+        <a href="https://instagram.com/youragency" class="footer-contact-link" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i> <span class="footer-link-text">@youragency</span>
+        </a>
+        <a href="mailto:contact@youragency.com" class="footer-contact-link" aria-label="Email">
+          <i class="fa fa-envelope"></i> <span class="footer-link-text">contact@youragency.com</span>
+        </a>
+        <a href="tel:6300959478" class="footer-contact-link" aria-label="Phone">
+          <i class="fa fa-phone"></i> <span class="footer-link-text">6300959478</span>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 Agency. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></button>
+
+  <!-- Work With Me Button -->
+  <button id="workWithMeBtn" aria-label="Work with me" onclick="openWorkWithMe()"><i class="fa fa-handshake"></i> Work With Me</button>
+
+  <!-- JS: AOS, Scroll, etc. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
